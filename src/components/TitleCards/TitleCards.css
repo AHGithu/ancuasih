@@ -3,7 +3,7 @@
 }
 .cards-list{
     display: flex;
-    gap: 10px;
+    gap: 2px;
     overflow-x: scroll;
     margin-bottom: 30px;
 }
@@ -41,6 +41,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
+    padding-right: 10px;
 }
 .cards-list .card:hover{
     transform: scale(1.05);
