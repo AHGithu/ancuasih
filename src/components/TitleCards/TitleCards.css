@@ -1,0 +1,123 @@
+*::-webkit-scrollbar{
+    display: none;
+}
+.cards-list{
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    margin-bottom: 30px;
+}
+.cards-list::-webkit-scrollbar{
+    display: none;
+}
+.titlecards{
+    padding: 0 0 0 6%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.titlecards p{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.titlecards h1{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.cards-list .card img{
+    display: flex;
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.cards-list .card{
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.cards-list .card:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+.cards-list .card:not(:hover){
+    transform: scale(1);
+    transition: all 0.3s ease;
+}
+.cards-list .card p{
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    color: #fff;
+}
+.cards-list .card:hover p{
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.cards-list .card:not(:hover) p{
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.titlecards-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titlecards-header p {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  margin-right: 3%;
+}
+
+@media (max-width: 800px) {
+    .titlecards{
+        padding-left: 4%;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .titlecards-header h1{
+        font-size: 20px;
+    }
+    .cards-list .card img{
+        height: 250px;
+        width: 150px;
+    }
+    .cards-list .card p{
+        font-size: 14px;
+    }
+}
+@media (max-width: 500px) {
+    .titlecards-header p{
+        font-size: 14px;
+    }
+    .titlecards-header h1{
+        font-size: 18px;
+    }
+    .cards-list .card img{
+        height: 200px;
+        width: 100px;
+    }
+    .cards-list .card p{
+        font-size: 12px;
+    }
+}
