@@ -7,6 +7,24 @@ const cards_data = [
         category: "series",
         description: "In a world where demons threaten humanity's existence, young Tanjiro Kamado becomes a demon slayer after his family is slaughtered and his sister turned into a demon.",
         isFavorite: true,
+        episodes: 26,
+        episodeLinks: [
+            "https://www.youtube.com/watch?v=VQGCKyvzIM4","https://www.youtube.com/watch?v=VQGCKyvzIM4",
+            "https://www.youtube.com/watch?v=VQGCKyvzIM4","https://www.youtube.com/watch?v=VQGCKyvzIM4",
+            "https://www.youtube.com/watch?v=VQGCKyvzIM4","https://www.youtube.com/watch?v=VQGCKyvzIM4",
+            "https://www.youtube.com/watch?v=VQGCKyvzIM4","https://www.youtube.com/watch?v=VQGCKyvzIM4",
+            "https://www.youtube.com/watch?v=VQGCKyvzIM4","https://www.youtube.com/watch?v=VQGCKyvzIM4",
+            "https://www.youtube.com/watch?v=QwNWY6z93O4","https://www.youtube.com/watch?v=VQGCKyvzIM4",
+            "https://www.youtube.com/watch?v=VQGCKyvzIM4","https://www.youtube.com/watch?v=VQGCKyvzIM4",
+            "https://www.youtube.com/watch?v=VQGCKyvzIM4","https://www.youtube.com/watch?v=VQGCKyvzIM4",
+            "https://www.youtube.com/watch?v=VQGCKyvzIM4","https://www.youtube.com/watch?v=VQGCKyvzIM4",
+            "https://www.youtube.com/watch?v=VQGCKyvzIM4","https://www.youtube.com/watch?v=VQGCKyvzIM4",
+            "https://www.youtube.com/watch?v=VQGCKyvzIM4","https://www.youtube.com/watch?v=VQGCKyvzIM4",
+            "https://www.youtube.com/watch?v=VQGCKyvzIM4","https://www.youtube.com/watch?v=VQGCKyvzIM4",
+            "https://www.youtube.com/watch?v=VQGCKyvzIM4","https://www.youtube.com/watch?v=VQGCKyvzIM4",
+            "https://www.youtube.com/watch?v=VQGCKyvzIM4","https://www.youtube.com/watch?v=VQGCKyvzIM4",
+            "https://www.youtube.com/watch?v=VQGCKyvzIM4","https://www.youtube.com/watch?v=VQGCKyvzIM4"
+        ]
     },
     {
         id: 2,
@@ -15,7 +33,8 @@ const cards_data = [
         trailer: "QwNWY6z93O4",
         category: "series",
         description: "In a world where magic is everything, Asta is born without any magic power. However, he never gives up and aims to become the Wizard King through physical training and anti-magic abilities.",
-        isFavorite: true
+        isFavorite: true,
+        episodes: 170
     },
     {
         id: 3,
@@ -24,7 +43,8 @@ const cards_data = [
         trailer: "v4yLeNt-kCU",
         category: "series",
         description: "Denji is a teenage boy living with a Chainsaw Devil named Pochita. Due to the debt his father left, he has been living a rock-bottom life while repaying his debt by harvesting devil corpses with Pochita.",
-        isFavorite: true
+        isFavorite: true,
+        episodes: 12
     },
     {
         id: 4,
@@ -33,7 +53,8 @@ const cards_data = [
         trailer: "V0OZWzTAqHg",
         category: "series",
         description: "In a world plagued by monsters called 'Kaiju', Kafka Hibino works as a kaiju corpse cleanup man until a mysterious creature enters his body, giving him the ability to transform into Kaiju No. 8.",
-        isFavorite: true
+        isFavorite: true,
+        episodes: 12
     },
     {
         id: 5,
@@ -42,7 +63,8 @@ const cards_data = [
         trailer: "CCXLUQzuigw",
         category: "series",
         description: "A spy, an assassin, and a telepath come together to form a family while each conceals their true identity from the others. However, their adopted daughter Anya knows everyone's secrets.",
-        isFavorite: true
+        isFavorite: true,
+        episodes: 12
     },
     {
         id: 6,
@@ -51,7 +73,8 @@ const cards_data = [
         trailer: "HaI4kX5gkPU",
         category: "series",
         description: "After being killed by a passing robber, a middle-aged businessman is reincarnated as a slime in a fantasy world. As he adapts to his new life, he begins gathering allies and building a nation of monsters.",
-        isFavorite: true
+        isFavorite: true,
+        episodes: 12
     },
     {
         id: 7,
@@ -60,7 +83,8 @@ const cards_data = [
         trailer: "LHtdKWJdif4",
         category: "series",
         description: "In a world where humanity lives inside cities surrounded by enormous walls due to the Titans, gigantic humanoid creatures who devour humans seemingly without reason.",
-        isFavorite: true
+        isFavorite: true,
+        episodes: 75
     },
     {
         id: 8,
@@ -69,7 +93,8 @@ const cards_data = [
         trailer: "S8_YwFLCh4U",
         category: "series",
         description: "Follow Monkey D. Luffy and his pirate crew in their grand adventure to find the legendary treasure 'One Piece' and become the King of the Pirates.",
-        isFavorite: true
+        isFavorite: true,
+        episodes: 1000
     },
     {
         id: 9,
@@ -78,7 +103,8 @@ const cards_data = [
         trailer: "22R0j8UKRzY",
         category: "series",
         description: "Follow Naruto Uzumaki, a young ninja with sealed powers of a nine-tailed fox demon, as he seeks recognition from his peers and dreams of becoming the Hokage, the leader of his village.",
-        isFavorite: true
+        isFavorite: true,
+        episodes: 500
     },
     {
         id: 10,
@@ -87,7 +113,8 @@ const cards_data = [
         trailer: "ByXuk9QqQkk",
         category: "movies",
         description: "A young girl stumbles upon a spirit world and must use her courage and wit to free her parents and return home.",
-        isFavorite: true
+        isFavorite: true,
+        episodes: 1
     },
     {
         id: 11,
@@ -96,7 +123,8 @@ const cards_data = [
         description: "A boy and a girl from different worlds switch bodies and form a unique bond.",
         trailer: "xU47nhruN-Q",
         category: "movies",
-        isFavorite: true
+        isFavorite: true,
+        episodes: 1
     },
     {
         id: 12,
@@ -105,7 +133,8 @@ const cards_data = [
         trailer: "BUfSen2rYQs",
         category: "movies",
         description: "A young woman finds solace and healing through her relationship with a mysterious talking cat.",
-        isFavorite: true
+        isFavorite: true,
+        episodes: 1
     },
     {
         id: 13,
@@ -114,7 +143,8 @@ const cards_data = [
         trailer: "iHF2y0fXOZo",
         category: "movies",
         description: "Heroes from the past and present join forces to save the world.",
-        isFavorite: true
+        isFavorite: true,
+        episodes: 1
     },
     {
         id: 14,
@@ -123,7 +153,8 @@ const cards_data = [
         trailer: "nfK6UgLra7g",
         category: "movies",
         description: "a boy and a girl who are both deaf meet and fall in love.",
-        isFavorite: true
+        isFavorite: true,
+        episodes: 1
     },
     {
         id: 15,
@@ -132,7 +163,8 @@ const cards_data = [
         trailer: "aXc9DVfLTGo",
         category: "movies",
         description: "A girl disguises herself as a boy to live with her crush.",
-        isFavorite: true
+        isFavorite: true,
+        episodes: 1
     },
     {
         id: 16,
@@ -141,7 +173,8 @@ const cards_data = [
         trailer: "ATJYac_dORw",
         category: "movies",
         description: "Tanjiro Kamado and his friends board the Infinity Train on a new mission.",
-        isFavorite: true
+        isFavorite: true,
+        episodes: 1
     },
     {
         id: 17,
@@ -150,7 +183,8 @@ const cards_data = [
         trailer: "YKJyP8L6QEs",
         category: "series",
         description: "Yuji Itadori, a high school student with extraordinary physical abilities, gets involved in the world of Cursed Spirits after swallowing a powerful cursed object to save his friends.",
-        isFavorite: true
+        isFavorite: true,
+        episodes: 24
     },
     {
         id: 18,
@@ -159,7 +193,8 @@ const cards_data = [
         trailer: "vGuQeQsoRgU",
         category: "series",
         description: "Ken Kaneki, a college student turned half-ghoul after a tragic encounter, must learn to survive in a world where humans and flesh-eating ghouls live among each other.",
-        isFavorite: true
+        isFavorite: true,
+        episodes: 12
     },
     {
         id: 19,
@@ -168,7 +203,8 @@ const cards_data = [
         trailer: "NlJZ-YgAt-c",
         category: "series",
         description: "A high school student discovers a supernatural notebook that allows him to kill anyone by writing the victim's name while picturing their face.",
-        isFavorite: true
+        isFavorite: true,
+        episodes: 37
     },
     {
         id: 20,
@@ -177,7 +213,8 @@ const cards_data = [
         trailer: "6ohYYtxfDCg",
         category: "series",
         description: "Players of a virtual reality MMORPG find themselves trapped in the game where death in-game means death in real life.",
-        isFavorite: true
+        isFavorite: true,
+        episodes: 25
     },
     {
         id: 21,
@@ -186,7 +223,8 @@ const cards_data = [
         trailer: "Poo5lqoWSGw",
         category: "series",
         description: "Saitama is a hero who only became a hero for fun. After three years of 'special' training, he's become so strong that he's practically invincible.",
-        isFavorite: true
+        isFavorite: true,
+        episodes: 24
     },
     {
         id: 22,
@@ -195,7 +233,8 @@ const cards_data = [
         trailer: "",
         category: "comics",
         description: "",
-        isFavorite: false
+        isFavorite: false,
+        episodes: 0
     }
 
 

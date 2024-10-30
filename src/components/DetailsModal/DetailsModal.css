@@ -1,0 +1,301 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.modal-overlay{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 99;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+.details-modal{
+    width: 70%;
+    max-width: 1200px;
+    height: 90vh;
+    margin: auto;
+    background-color: #000000;
+    filter: drop-shadow(0 0 10px #f3f3f3);
+    inset: 0;
+    position: fixed;
+    border-radius: 10px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 20px 4%;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    opacity: 1;
+    transform: translateY(20px);
+    animation: slideIn 0.3s ease forwards;
+}
+
+.details-modal .close-icon{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+}
+
+.details-modal .close-icon:hover{
+    transform: scale(1.1);
+    background-color: #f3f3f39d;
+}
+
+.details-modal .details-modal-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+.details-modal .details-modal-content .details-modal-img{
+    object-fit: cover;
+    border-radius: 10px;
+    width: 100%;
+    height: 30vh;
+    min-height: 200px;
+    max-height: 400px;
+    top: 0;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    mask-image: linear-gradient(to right, transparent, black 15%),
+                linear-gradient(to bottom, black 20%, transparent),
+                linear-gradient(to left, transparent, black 15%);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 15%),
+                        linear-gradient(to bottom, black 5%, transparent),
+                        linear-gradient(to left, transparent, black 15%);
+    mask-composite: intersect;
+    -webkit-mask-composite: source-in;
+    filter: drop-shadow(0 0 10px #000000);
+    margin-bottom: 20px;
+    
+}
+
+
+.details-modal .details-modal-content .details-modal-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0px;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    mask-image: linear-gradient(to bottom, black 92%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, black 92%, transparent);
+    mask-composite: intersect;
+    -webkit-mask-composite: source-in;
+    z-index: 1;
+}
+/* 
+.details-modal .details-modal-content:hover .details-modal-info {
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.details-modal .details-modal-content:hover .details-modal-img {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.details-modal .details-modal-content:not(:hover) .details-modal-img {
+    transform: scale(1);
+    transition: all 0.3s ease;
+}
+
+.details-modal .details-modal-content:not(:hover) .details-modal-info {
+    opacity: 1;
+    transition: all 0.3s ease;
+} */
+
+.details-modal .details-modal-content .details-modal-info h1{
+    font-size: 24px;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0,0,0, 0.7),
+                0 0 20px rgba(0,0,0, 0.5),
+                0 0 30px rgba(0,0,0, 0.3);
+    position: relative;
+}
+
+.details-modal .details-modal-content .details-modal-info p{
+    font-size: 14px;
+    
+}
+
+.details-modal .details-modal-content button{
+    border: 0;
+    outline: 0;
+    padding: 5px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.details-modal .details-modal-content button img{
+    width: 30px;
+    transition: all 0.3s ease;
+}
+
+.details-modal .details-modal-content .details-modal-btns{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    z-index: 102;
+}
+
+.details-modal .details-modal-content .details-modal-btns button{
+    width: 150px;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.details-modal .details-modal-content .details-modal-btns button.details-modal-btn-dark{
+    background-color: #6d6d6eb3;
+    color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: auto;
+    padding: auto;
+}
+
+.details-modal .details-modal-content .details-modal-btns button.details-modal-btn{
+    background-color: #fff;
+    color: #000;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.details-modal .details-modal-content .details-modal-btns button:hover{
+    background: #ffffffbf;
+}
+
+.details-modal .details-modal-content .details-modal-btns button.details-modal-btn-dark:hover{
+    background: #6d6d6e66;
+}
+
+.details-modal .details-modal-content .episodes-container{
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    max-height: 100px;
+    overflow-y: auto;
+    padding: 5px;
+}
+
+.details-modal .details-modal-content .episodes-container button {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+}
+
+.details-modal .details-modal-content .episodes-container .no-episodes-message p{
+    color: #747171;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    font-style: italic;
+}
+
+.details-modal .details-modal-content .related-anime .no-episodes-message p{
+    color: #747171;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    font-style: italic;
+}
+
+.details-modal .details-modal-content .episodes-container .details-modal-btn-eps{
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.details-modal .details-modal-content .episodes-container .details-modal-btn-eps:hover{
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .details-modal .details-modal-content .details-modal-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 0px;
+        overflow-y: auto;
+    
+    }
+    .details-modal {
+        width: 70%;
+        padding: 15px 3%;
+    }
+
+    .details-modal .details-modal-content .details-modal-info h1 {
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .details-modal .details-modal-content .details-modal-info p {
+        font-size: 8px;
+        margin: 0;
+    }
+
+    .details-modal .details-modal-content .details-modal-btns button {
+        width: 100px;
+        font-size: 12px;
+        z-index: 101;
+    }
+    
+}

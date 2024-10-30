@@ -8,12 +8,26 @@ import trailer_icon from '../../assets/trailer_icon.png'
 import TitleCards from "../../components/TitleCards/TitleCards";
 import Footer from "../../components/Footer/Footer";
 import { useNavigate } from 'react-router-dom';
+import cardsData from '../../assets/cards/Cards_data';
+import { useModal } from '../../context/ModalContext';
 
 const Home = () =>{
   const navigate = useNavigate();
 
   const handleTrailerClick = () => {
     navigate(`/player/YKJyP8L6QEs`);
+  };
+
+  const { handleCardClick } = useModal();
+  
+  const handlePlayClick = () => {
+    console.log('Play button clicked'); // Debug log
+    const targetCard = cardsData.find(card => card.id === 17);
+    console.log('Found card:', targetCard); // Debug log
+    
+    if (targetCard) {
+      handleCardClick(targetCard);
+    }
   };
 
   return(
@@ -29,7 +43,7 @@ const Home = () =>{
             <p>The story follows high school student Yuji Itadori as he joins a secret organization of Jujutsu Sorcerers to eliminate a powerful Curse named Ryomen Sukuna, of whom Yuji becomes the host.</p>
             
             <div className="hero-btns">
-              <button className="btn"><img src={play_icon} alt="" /> Play</button>
+              <button className="btn" onClick={handlePlayClick}><img src={play_icon} alt="" /> Play</button>
               <button className="btn dark-btn" onClick={handleTrailerClick}>
                 <img src={trailer_icon} alt="" /> Trailer
               </button>
